@@ -1,0 +1,89 @@
+html {
+  font-family: 'Lato', sans-serif;
+  background-color: #F4F2DF
+}
+
+.banner-txt {
+  color: #EFEBCE;
+}
+
+.fade-in-short {
+  animation: fade-in 4s;
+}
+
+.fade-in-long {
+  animation: fade-in 11s;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.circle-crop {
+  -webkit-clip-path: circle(44.3% at 50% 50%);
+  clip-path: circle(44.3% at 50% 50%);
+}
+
+.kayla-img {
+  margin-right: auto;
+  margin-left: auto;
+  height: 50%;
+  width: 50%;
+}
+
+.kayla-lines {
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+}
+
+.js-line-animate {
+  opacity: 1;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: dash 1.5s linear forwards;
+}
+
+h2 {
+  color: #94C4A1;
+}
+
+a {
+  color: #94C4A1;
+  text-decoration: none;
+  transition: color 500ms;
+}
+
+a:hover {
+  color: #BB8588;
+}
+
+svg {
+  fill: #EFEBCE;
+  transition: fill 500ms;
+}
+
+.facebook-icon:hover svg,
+.instagram-icon:hover svg,
+.behance-icon:hover svg {
+  fill: #BB8588;
+}
+
+footer {
+  background-color: #94C4A1;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
